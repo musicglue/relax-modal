@@ -1,0 +1,51 @@
+{
+  "name": "relax-modal",
+  "version": "0.0.1",
+  "description": "A modal framework for React.js using Relay and Redux to manage state.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm run test && npm run build",
+    "test": "eslint src",
+    "docs": "documentation build src/index.js -f md > README.md",
+    "preversion": "npm run prepublish && npm run docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musicglue/relax-modal.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "relax",
+    "modals"
+  ],
+  "author": "Music Glue",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/musicglue/relax-modal/issues"
+  },
+  "homepage": "https://github.com/musicglue/relax-modal#readme",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^6.0.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-1": "^6.5.0",
+    "documentation": "^4.0.0-beta5",
+    "eslint": "^2.11.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jsx-a11y": "^1.3.0",
+    "eslint-plugin-react": "^5.1.1",
+    "react": "^15.0.1",
+    "react-relax": "^1.1.0"
+  },
+  "peerDependencies": {
+    "react": "^15.0.1",
+    "react-relax": "^1.1.0"
+  },
+  "dependencies": {
+  }
+}
